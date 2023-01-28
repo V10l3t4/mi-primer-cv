@@ -1,0 +1,100 @@
+*{
+	border: 100px;
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #e083d1;
+}
+h1{
+	color:black;
+    font-size: 100px;
+    font-family:'Courier New', Courier, monospace;
+    border: 100px;
+    background-color: bisque;
+}
+h3{
+	color:black;
+    font-size: 50px;
+    font-family:'Courier New', Courier, monospace;
+    border: 100px;
+    background-color: bisque;
+}
+p{
+	color:black;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 100px;
+	background-color: rgb(209, 192, 170);
+	margin: 1 1 1 1;
+	padding: 2 2 2 2;
+}
+button{
+	color:black;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    border: 100px;
+    background-color: bisque;
+}
+header{
+	width: 10%;
+}
+
+.navegacion{
+	border: 100px;
+	width: 1900px;
+	margin: 100px auto;
+	background: bisque;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 30px 40px;
+	color:black;
+	font-family: 'Open sans';
+	font-size: 45px;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #6124ee;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background:rgb(123, 79, 245);
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color:beige;
+	font-family: 'Open sans';
+	font-size: 40px;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
